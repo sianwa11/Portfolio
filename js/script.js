@@ -1,3 +1,25 @@
+"use strict";
+
+const scrollTo = function () {
+  document.querySelector(".nav_links").addEventListener("click", function (e) {
+    e.preventDefault();
+    // console.log(e.target);
+
+    if (e.target.classList.contains("nav_link")) {
+      const id = e.target.getAttribute("href");
+
+      // Scroll into view
+      document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    }
+
+    if (e.target.classList.contains("pdf_link")) {
+      const url = e.target.getAttribute("href");
+      // console.log(url);
+      window.open(url);
+    }
+  });
+};
+
 const gsapAnimations = function () {
   gsap.registerPlugin(ScrollTrigger);
   let tl = gsap.timeline();
@@ -63,6 +85,7 @@ const gsapAnimations = function () {
 
 const init = function () {
   gsapAnimations();
+  scrollTo();
 };
 
 init();

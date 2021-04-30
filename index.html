@@ -28,9 +28,12 @@
         <a href="index.html" class="logo">Sianwa Atemi</a>
 
         <nav>
-          <ul>
-            <li><a href="#">My Skills</a></li>
-            <li><a href="#">My Work</a></li>
+          <ul class="nav_links">
+            <li><a class="nav_link" href="#section-1">My Skills</a></li>
+            <li><a class="nav_link" href="#section-2">Demos</a></li>
+            <li>
+              <a class="pdf_link" href="/docs/SIANWA_ATEMI_CV.pdf">My Resume</a>
+            </li>
           </ul>
         </nav>
       </header>
@@ -38,10 +41,16 @@
       <div class="social-header">
         <ul>
           <li>
-            <a href="#"><img src="images/github.png" alt="github" /></a>
+            <a target="_blank" href="https://github.com/sianwa11"
+              ><img src="images/github.png" alt="github"
+            /></a>
           </li>
           <li>
-            <a href="#"><img src="images/linkedin.png" alt="linkedin" /></a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/sianwa-atemi-0a7b0116b/"
+              ><img src="images/linkedin.png" alt="linkedin"
+            /></a>
           </li>
         </ul>
       </div>
@@ -119,7 +128,7 @@
       </svg>
     </div>
 
-    <section class="featured">
+    <section class="featured" id="section-1">
       <div class="left">
         <div class="inner transition2">
           <h1 class="subtitle">My skills</h1>
@@ -137,8 +146,9 @@
               <img src="images/backend.svg" alt="Backend Icon" />
               <p class="skill-title">Backend development</p>
               <p class="featured-desc skill-desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                I have worked with Javascript and PHP in Object-oriented and
+                procedural paradigms. I also have knowledge in the Laravel
+                framework, MySQL and Oracle database.
               </p>
             </div>
           </li>
@@ -148,8 +158,8 @@
               <img src="images/web-design.svg" alt="Frontend Icon" />
               <p class="skill-title">Frontend development</p>
               <p class="featured-desc skill-desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Knowledgable in HTML, CSS, Adobe XD and Inkscapes for vector
+                drawing.
               </p>
             </div>
           </li>
@@ -159,8 +169,8 @@
               <img src="images/coding.svg" alt="Gamedev Icon" />
               <p class="skill-title">Game development</p>
               <p class="featured-desc skill-desc">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Intermediate skills in C#, Lua and Java. I have worked with the
+                Unity video game engine too.
               </p>
             </div>
           </li>
@@ -168,19 +178,25 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section class="portfolio" id="section-2">
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
-            <p class="subtitle">Guitar App</p>
-            <p class="featured-title">Frestatic.com</p>
+            <p class="subtitle">SpaceDash 2D</p>
+            <p class="featured-title">
+              <a
+                target="_blank"
+                href="https://sianwa-atemi.itch.io/spacedash-2d"
+                >Demo</a
+              >
+            </p>
             <p class="featured-desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              This is a 2D game made in the Unity game engine where the player
+              controls a ball using the space button while avoiding obstacles
             </p>
           </div>
         </div>
-        <a href="#"
+        <a target="_blank" href="https://github.com/sianwa11/SpaceDash2D"
           ><img
             class="project_image"
             src="images/Project-img.png"
@@ -191,38 +207,37 @@
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
-            <p class="subtitle">Guitar App</p>
-            <p class="featured-title">Frestatic.com</p>
+            <p class="subtitle">Recipe-fy</p>
+            <p class="featured-title">
+              <a target="_blank" href="https://recipe-fy.netlify.app/">Demo</a>
+            </p>
             <p class="featured-desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              A website to search for recipes and ingredients
             </p>
           </div>
         </div>
-        <a href="#"
+        <a target="_blank" href="https://github.com/sianwa11/Recipefy"
           ><img
             class="project_image"
-            src="images/Project-img.png"
-            alt="SpaceDash"
+            src="images/Recipe-fy.png"
+            alt="Recipe-fy"
         /></a>
       </div>
 
       <div class="portfolio-container transition3">
         <div class="portfolio-left">
           <div class="inner">
-            <p class="subtitle">Guitar App</p>
-            <p class="featured-title">Frestatic.com</p>
+            <p class="subtitle">Mapty - 2.0</p>
+            <p class="featured-title">
+              <a target="_blank" href="https://mapty-2.netlify.app">Demo</a>
+            </p>
             <p class="featured-desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              A running calculator with workout points on a map
             </p>
           </div>
         </div>
-        <a href="#"
-          ><img
-            class="project_image"
-            src="images/Project-img.png"
-            alt="SpaceDash"
+        <a target="_blank" href="https://github.com/sianwa11/Mapty-2.0"
+          ><img class="project_image" src="images/Mapty.png" alt="Mapty"
         /></a>
       </div>
     </section>
